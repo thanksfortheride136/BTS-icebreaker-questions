@@ -21,7 +21,16 @@ const questions = [
     "How would you spell the sound a hand dryer makes?",
     "If you were invited to four different animal dance parties happening simultaneously, whose party would you choose: the snake, horse, eagle, or Chihuahua?",
     "If you had to choose between a llama and a penguin preparing your tax return, which one would you trust?",
-    "What is your go-to Super Smash Bros. character?"
+    "What is your go-to Super Smash Bros. character?",
+  "What job do you think you’d be really good at?",
+  "What’s the best / worst thing about your work / school?",
+  "If you were an ice cream flavour, what would you be?",
+  "What’s the last show you binge-watched?",
+  "What food do you absolutely dislike",
+  "If you could only listen to 1 genre of music forever, what would it be?",
+  "If you could have an unlimited supply of one thing for the rest of your life, what would it be",
+  "If your life was a hashtag, what would it be?",
+  "If you could speak any language fluently, which would it be?", 
 ];
 
 let usedQuestions = [];
