@@ -20,7 +20,7 @@ const questions = [
     "Your friend Todd is leaning out the window, asking you to toss him a donut. How many stories up could Todd be for you to still be confident in your ability to be on target with the donut?",
     "How would you spell the sound a hand dryer makes?",
     "If you were invited to four different animal dance parties happening simultaneously, whose party would you choose: the snake, horse, eagle, or Chihuahua?",
-    "If you had to choose between a llama and a penguin preparing your tax return, which one would you trust?",
+    "If you had to choose between a llama and a penguin grading a Regents exam of yours, which one would you trust?",
     "What is your go-to Super Smash Bros. character?",
   "What job do you think you’d be really good at?",
   "What’s the best / worst thing about your work / school?",
