@@ -22,25 +22,26 @@ const questions = [
     "If you were invited to four different animal dance parties happening simultaneously, whose party would you choose: the snake, horse, eagle, or Chihuahua?",
     "If you had to choose between a llama and a penguin preparing your tax return, which one would you trust?",
     "What is your go-to Super Smash Bros. character?"
-    
 ];
 
+let usedQuestions = [];
+
 document.getElementById('generate-btn').addEventListener('click', function() {
-    const randomIndex = Math.floor(Math.random() * questions.length);
+    if (usedQuestions.length === questions.length) {
+        // All questions have been used, reset the list
+        usedQuestions = [];
+    }
+
+    let randomIndex;
+    do {
+        randomIndex = Math.floor(Math.random() * questions.length);
+    } while (usedQuestions.includes(randomIndex));
+
+    usedQuestions.push(randomIndex);
     const question = questions[randomIndex];
     const questionElement = document.getElementById('question');
     
-    // Clear the previous question
-    questionElement.textContent = '';
-    
-    // Typewriter effect
-    let i = 0;
-    function typeWriter() {
-        if (i < question.length) {
-            questionElement.textContent += question.charAt(i);
-            i++;
-            setTimeout(typeWriter, 50); // Adjust the speed of typing here (lower = faster)
-        }
-    }
-    typeWriter();
+    // Display the full question immediately
+    questionElement.textContent = question;
 });
+
