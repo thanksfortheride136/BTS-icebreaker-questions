@@ -3,11 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url('custom-cursor.png'), auto; /* Custom cursor */
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4);
     background-size: 400% 400%;
     animation: gradientAnimation 10s ease infinite;
@@ -81,21 +80,7 @@ button:active {
 p {
     margin-top: 30px;
     font-size: 1.5em;
-    color: black;  /* Changed text color to black */
+    color: black;
     min-height: 60px;
-    transition: opacity 0.3s ease;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }  /* Changed caret color to black */
+    white-space: normal;  /* Allow text to wrap normally */
 }
